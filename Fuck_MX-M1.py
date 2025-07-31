@@ -39,7 +39,7 @@ try:
 	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
 	open('.prox.txt','w').write(prox) 
 except Exception as e:
-	print(' \x1b[1;91m\x1b[1;96m\x1b[1;92m \x1b[1;96m[MX')
+	#print(' \x1b[1;91m\x1b[1;96m\x1b[1;92m \x1b[1;96m[MX')
 prox=open('.prox.txt','r').read().splitlines()
 def UA1():
     dal = "Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))"
