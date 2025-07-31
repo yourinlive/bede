@@ -35,12 +35,19 @@ ugen=[]
 cokbrut=[]
 ses=requests.Session()
 princp=[]
+#------------------[ PROXY SERVER ]-------------------#
+proxylist = requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
+open('socksku.txt', 'w').write(proxylist)
+proxsi = open('socksku.txt', 'r').read().splitlines()
+
+os.system('rm -rf prox.txt')  
 try:
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-	open('.prox.txt','w').write(prox) 
+    prox= requests.get('https://raw.githubusercontent.com/Ramxantanha/data/main/proxies.txt').text
+    open('prox.txt','w').write(prox)
 except Exception as e:
-	#print(' \x1b[1;91m\x1b[1;96m\x1b[1;92m \x1b[1;96m[MX')
-prox=open('.prox.txt','r').read().splitlines()
+    pass
+prox=open('prox.txt','r').read().splitlines()
+gt = random.choice(['GT-1015','GT-1
 def UA1():
     dal = "Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))"
     a = "[FBAN/FB4A;FBAV/"+str(random.randint(49,66))+'.0.0.'+str(random.randrange(20,49))+str(random.randint(11,99)) +";FBBV/"+str(random.randint(11111111,77777777))
