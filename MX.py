@@ -47,7 +47,7 @@ try:
 except Exception as e:
     pass
 prox=open('prox.txt','r').read().splitlines()
-gt = random.choice(['GT-1015','GT-1
+
 def UA1():
     dal = "Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}))"
     a = "[FBAN/FB4A;FBAV/"+str(random.randint(49,66))+'.0.0.'+str(random.randrange(20,49))+str(random.randint(11,99)) +";FBBV/"+str(random.randint(11111111,77777777))
