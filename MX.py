@@ -75,17 +75,7 @@ def windows():
     nt_version = f"{random.choice(range(5, 7))}.1"
     chrome_version = f"{random.choice(range(8,12))}.0.{random.choice(range(552,661))}.0"
     return f'Mozilla/5.0 (Windows; U; Windows NT {nt_version}; en-US) AppleWebKit/534.{aV} (KHTML, like Gecko) Chrome/{chrome_version} Safari/534.{aV}'
-	try:
-		ua=open('bbnew.txt','r').read().splitlines()
-		for ub in ua:
-			ugen.append(ub)
-	except:
-		a=requests.get('https://github.com/EC-1709/a/blob/main/bbnew.txt').text
-		ua=open('.bbnew.txt','w')
-		aa=re.findall('line">(.*?)<',str(a))
-		for un in aa:
-			ua.write(un+'\n')
-		ua=open('.bbnew.txt','r').read().splitlines()
+	
 #------------[ INDICATION ]---------------#
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 cokbrut=[]
